@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'core',
+    'item',
 ]
 
 MIDDLEWARE = [
@@ -80,6 +81,8 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+CSRF_TRUSTED_ORIGINS = ['https://*.gitpod.io','https://*.127.0.0.1']
 
 
 # Password validation
